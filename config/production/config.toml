@@ -1,1 +1,2 @@
-canonifyURLs = false
+baseurl = "https://andrecedik.github.io/ha-mushroom-templates/"
+canonifyURLs = true
