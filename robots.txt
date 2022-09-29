@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://doks.netlify.app/sitemap.xml
+Sitemap: https://andrecedik.github.io/ha-mushroom-templates/sitemap.xml
