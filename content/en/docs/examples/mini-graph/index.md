@@ -22,7 +22,7 @@ toc: true
 
 ## Image
 
-foo
+![foo](mini-graph-card-dark.png "bar")
 
 ## Code
 
