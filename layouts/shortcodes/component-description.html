@@ -1,0 +1,7 @@
+{{ $component := index .Site.Data.components.frontend (.Get "name") }}
+
+<ul>
+  <li>Name: {{ $component.name }}</li>
+  <li>Installation Method: {{ $component.installation_method }}</li>
+  <li>Sourcecode: <a href="{{ $component.sourcecode }}" target="_blank">{{ $component.sourcecode }}</a></li>
+</ul>

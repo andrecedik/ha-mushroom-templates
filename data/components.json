@@ -1,0 +1,11 @@
+{
+  "frontend": {
+    "mini-graph-card": {
+      "installation_method": "HACS",
+      "link": "https://my.home-assistant.io/redirect/hacs_repository/?owner=hacs&repository=151280062&category=integration",
+      "name": "Lovelace Mini Graph Card",
+      "sourcecode": "https://github.com/kalkih/mini-graph-card"
+    }
+  },
+  "integrations": {}
+}
