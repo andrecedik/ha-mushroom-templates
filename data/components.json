@@ -1,10 +1,22 @@
 {
   "frontend": {
+    "horizontal-stack": {
+      "installation_method": "Home Assistant",
+      "link": "",
+      "name": "Horizontal Stack",
+      "sourcecode": "https://www.home-assistant.io/dashboards/horizontal-stack/"
+    },
     "mini-graph-card": {
       "installation_method": "HACS",
       "link": "https://my.home-assistant.io/redirect/hacs_repository/?owner=hacs&repository=151280062&category=integration",
       "name": "Lovelace Mini Graph Card",
       "sourcecode": "https://github.com/kalkih/mini-graph-card"
+    },
+    "stack-in-card": {
+      "installation_method": "HACS",
+      "link": "",
+      "name": "Stack in Card",
+      "sourcecode": "https://github.com/custom-cards/stack-in-card/"
     }
   },
   "integrations": {}

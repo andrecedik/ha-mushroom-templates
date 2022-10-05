@@ -16,7 +16,9 @@ toc: true
 
 ## Compontents used
 
-{{<component-description name="mini-graph-card">}}
+- {{<component-description name="stack-in-card">}}
+- {{<component-description name="horizontal-stack">}}
+- {{<component-description name="mini-graph-card">}}
 
 ## Image
 

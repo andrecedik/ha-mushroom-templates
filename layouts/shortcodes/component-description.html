@@ -1,7 +1,7 @@
 {{ $component := index .Site.Data.components.frontend (.Get "name") }}
 
-<ul>
-  <li>Name: {{ $component.name }}</li>
-  <li>Installation Method: {{ $component.installation_method }}</li>
-  <li>Sourcecode: <a href="{{ $component.sourcecode }}" target="_blank">{{ $component.sourcecode }}</a></li>
-</ul>
+<a href="{{ $component.sourcecode }}" target="_blank" data-toggle="tooltip" data-placement="top" title="Tooltip on top">{{ $component.name }}</a>
+<br/>Installation Method: {{ $component.installation_method }}
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
