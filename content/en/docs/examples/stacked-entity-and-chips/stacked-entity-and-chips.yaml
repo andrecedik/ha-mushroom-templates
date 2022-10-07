@@ -1,0 +1,139 @@
+type: horizontal-stack
+cards:
+  - type: custom:stack-in-card
+    cards:
+      - type: custom:mushroom-template-card
+        primary: Wohnen
+        secondary: null
+        icon: mdi:sofa
+        tap_action:
+          action: navigate
+          navigation_path: tablet-livingroom
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: template
+            entity: sensor.livingroom_temperature
+            content: '{{ states("sensor.livingroom_temperature") }}°C'
+            tap_action: None
+            hold_action: None
+            card_mod:
+              style: |-
+                ha-card {
+                  top: -5px;
+                }
+          - type: template
+            entity: sensor.livingroom_humidity
+            content: '{{ states("sensor.livingroom_humidity") }} %'
+            tap_action: none
+            hold_action: none
+            card_mod:
+              style: |-
+                ha-card {
+                  top: -5px;
+                }
+          - type: template
+            entity: light.tv_area
+            icon: mdi:lightbulb
+            icon_color: |
+              {% if is_state('light.tv_area', 'on') %}
+                amber
+              {% else %}
+                disabled
+              {% endif %}
+            tap_action:
+              action: toggle
+            hold_action: None
+            card_mod:
+              style: |-
+                ha-card {
+                  top: -5px;
+                }
+          - type: template
+            entity: cover.shutters_living_room
+            icon: |
+              {% if is_state('cover.shutters_living_room', 'closed') %}
+                mdi:window-shutter
+              {% else %}
+                mdi:window-shutter-open
+              {% endif %}
+            icon_color: |
+              {% if is_state('cover.shutters_living_room', 'closed') %}
+                disabled
+              {% else %}
+                green
+              {% endif %}
+            tap_action:
+              action: toggle
+            hold_action: None
+            card_mod:
+              style: |-
+                ha-card {
+                  top: -5px;
+                }
+        alignment: center
+        card_mod:
+          style: |
+            ha-card {
+              --chip-box-shadow: none;
+              --chip-background: none;
+              --chip-spacing: 0;
+  - type: custom:stack-in-card
+    cards:
+      - type: custom:mushroom-template-card
+        primary: Gast
+        secondary: null
+        icon: mdi:bag-carry-on
+        tap_action:
+          action: navigate
+          navigation_path: tablet-guestroom
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: template
+            entity: sensor.guestroom_temperature
+            content: '{{ states("sensor.guestroom_temperature") }}°C'
+            tap_action: None
+            hold_action: None
+            card_mod:
+              style: |-
+                ha-card {
+                  top: -5px;
+                }
+          - type: template
+            entity: sensor.guestroom_humidity
+            content: '{{ states("sensor.guestroom_humidity") }} %'
+            tap_action: none
+            hold_action: none
+            card_mod:
+              style: |-
+                ha-card {
+                  top: -5px;
+                }
+          - type: template
+            entity: cover.shutters_guest_room
+            icon: |
+              {% if is_state('cover.shutters_guest_room', 'closed') %}
+                mdi:window-shutter
+              {% else %}
+                mdi:window-shutter-open
+              {% endif %}
+            icon_color: |
+              {% if is_state('cover.shutters_guest_room', 'closed') %}
+                disabled
+              {% else %}
+                green
+              {% endif %}
+            tap_action:
+              action: toggle
+            hold_action: None
+            card_mod:
+              style: |-
+                ha-card {
+                  top: -5px;
+                }
+        alignment: center
+        card_mod:
+          style: |
+            ha-card {
+              --chip-box-shadow: none;
+              --chip-background: none;
+              --chip-spacing: 0;

@@ -12,6 +12,18 @@
       "name": "Lovelace Mini Graph Card",
       "sourcecode": "https://github.com/kalkih/mini-graph-card"
     },
+    "mushroom-chips-card":{
+      "installation_method": "HACS",
+      "link": "",
+      "name": "Mushroom Chips Card",
+      "sourcecode": "https://github.com/piitaya/lovelace-mushroom/blob/main/docs/cards/chips.md"
+    },
+    "mushroom-template-card":{
+      "installation_method": "HACS",
+      "link": "",
+      "name": "Mushroom Template Card",
+      "sourcecode": "https://github.com/piitaya/lovelace-mushroom/blob/main/docs/cards/template.md"
+    },
     "stack-in-card": {
       "installation_method": "HACS",
       "link": "",
