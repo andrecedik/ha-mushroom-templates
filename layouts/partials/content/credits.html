@@ -1,0 +1,16 @@
+<section class="section section-sm">
+{{ if eq .Params.credits.type "ha-forum" }}
+  <div class="container">
+    <div class="row justify-content-left text-left">
+      <div class="col-lg-2">
+        <img src="{{ .Params.credits.avatar_image }}">
+      </div>
+      <div class="col-lg-10">
+        <a href="{{ .Params.credits.link }}" target="_blank">
+          Post on HA forum
+        </a> by {{ .Params.credits.name }} ({{ .Params.credits.username }})
+      </div>
+    </div>
+  </div>
+{{ end }}
+</section>

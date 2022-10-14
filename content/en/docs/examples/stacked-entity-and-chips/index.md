@@ -20,6 +20,7 @@ toc: true
 - {{<component-description name="horizontal-stack">}}
 - {{<component-description name="mushroom-chips-card">}}
 - {{<component-description name="mushroom-template-card">}}
+- {{<component-description name="lovelace-card-mod">}}
 
 ## Image
 

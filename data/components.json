@@ -6,19 +6,37 @@
       "name": "Horizontal Stack",
       "sourcecode": "https://www.home-assistant.io/dashboards/horizontal-stack/"
     },
+    "lovelace-card-mod": {
+      "installation_method": "HACS",
+      "link": "",
+      "name": "Lovelace Card Mod",
+      "sourcecode": "https://github.com/thomasloven/lovelace-card-mod"
+    },
     "mini-graph-card": {
       "installation_method": "HACS",
       "link": "https://my.home-assistant.io/redirect/hacs_repository/?owner=hacs&repository=151280062&category=integration",
       "name": "Lovelace Mini Graph Card",
       "sourcecode": "https://github.com/kalkih/mini-graph-card"
     },
-    "mushroom-chips-card":{
+    "mushroom-chips-card": {
       "installation_method": "HACS",
       "link": "",
       "name": "Mushroom Chips Card",
       "sourcecode": "https://github.com/piitaya/lovelace-mushroom/blob/main/docs/cards/chips.md"
     },
-    "mushroom-template-card":{
+    "mushroom-climate-card": {
+      "installation_method": "HACS",
+      "link": "",
+      "name": "Mushroom Climate Card",
+      "sourcecode": "https://github.com/piitaya/lovelace-mushroom/blob/main/docs/cards/climate.md"
+    },
+    "mushroom-media-player-card": {
+      "installation_method": "HACS",
+      "link": "",
+      "name": "Mushroom Media Player Card",
+      "sourcecode": "https://github.com/piitaya/lovelace-mushroom/blob/main/docs/cards/media-player.md"
+    },
+    "mushroom-template-card": {
       "installation_method": "HACS",
       "link": "",
       "name": "Mushroom Template Card",

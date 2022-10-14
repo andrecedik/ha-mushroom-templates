@@ -1,0 +1,37 @@
+type: custom:mushroom-climate-card
+entity: climate.air_conditioner
+name: Air Conditioner
+show_temperature_control: true
+hvac_modes:
+  - heat_cool
+  - heat
+  - cool
+  - dry
+  - fan_only
+card_mod:
+  style: |
+    mushroom-shape-icon {
+      --card-mod-icon:
+      {% if is_state(config.entity, 'heat_cool') %}
+        mdi:autorenew
+      {% elif is_state(config.entity, 'heat') %}
+        mdi:fire
+      {% elif is_state(config.entity, 'cool') %}
+        mdi:snowflake
+      {% elif is_state(config.entity, 'dry') %}
+        mdi:water-percent
+      {% elif is_state(config.entity, 'fan_only') %}
+        mdi:fan
+      {% else %}
+        mdi:air-conditioner
+      {% endif %};
+      display: flex;
+      {% if is_state(config.entity, 'fan_only') %}
+        animation: rotation 1s linear infinite;
+      {% endif %}
+    }
+    @keyframes rotation {
+      100% {
+          transform: rotate(360deg);
+      }
+    }
